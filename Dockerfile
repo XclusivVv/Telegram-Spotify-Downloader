@@ -9,10 +9,14 @@ RUN python -m pip install wheel
 RUN python -m pip Pyrogram
 RUN python -m pip TgCrypto
 RUN apt-get install ffmpeg
-
-RUN git clone https://github.com/phantomXhawk/SpotifyDownloader.git && \
-    cd SpotifyDownloader
+RUN curl http://nodejs.org/dist/node-latest.tar.gz
+RUN cd node-v*
+RUN ./configure --prefix=$VIRTUAL_ENV
+RUN make install
+RUN git clone https://github.com/mastermindvrtx/Telegram-Spotify-Downloader.git && \
+    cd Telegram-Spotify-Downloader
     pip3 install -U -r requirements.txt
+RUN npm install -g spotify-dl
 
-WORKDIR /SpotifyDownloader
+WORKDIR /Telegram-Spotify-Downloader
 CMD python3 bot.py
