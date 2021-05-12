@@ -12,7 +12,7 @@
 **File size more then 2gb won't be downloaded due to telegram policy**
 
 ## Prerequisite: 
-* ffmpeg - [https://github.com/phantomXhawk/spotify-heroku-buildpack-ffmpeg.git]
+* special ffmpeg for this build- [https://github.com/mastermindvrtx/Spotify-Heroku-Buildpack.git]
   
     
 ## Dependencies:
