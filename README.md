@@ -25,7 +25,7 @@
 
 # |-------------------------------------------------->🔥Heroku:
 * The easiest way to deploy [@spotifyvrtxbot](https://t.me/@spotifyvrtxbot)
-* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phantomXhawk/SpotifyDownloader.git/tree/master)
+* [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phantomXhawk/SpotifyDownloader.git/tree/Vrtx)
 
 <p align="centre">
   <img src="https://telegra.ph/file/dc134d63f237517fcf043.jpg">
