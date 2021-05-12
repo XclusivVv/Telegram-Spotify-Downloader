@@ -71,6 +71,15 @@ def main():
             pass_chat_data=True
         )
     )
+    dp.add_handler(
+        CommandHandler(
+            'spotifydl',
+            sender.botify,
+            pass_args=True,
+            pass_job_queue=True,
+            pass_chat_data=True
+        )
+    )    
     dp.add_handler(CommandHandler(
             'help',
             sender.botify,
