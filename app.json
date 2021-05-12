@@ -14,7 +14,7 @@
         "APP_NAME": {"description": "Name of your Herko-App [check-first-blank-box]", "required": true}  
   },
       "buildpacks": [
-        {"url": "https://github.com/phantomXhawk/spotify-heroku-buildpack-ffmpeg.git"},
+        {"url": "https://github.com/mastermindvrtx/Spotify-Heroku-Buildpack.git"},
         {"url": "heroku/python"}
     ],
   "formation": {
