@@ -23,5 +23,5 @@
             "size": "free"
         }
     },
-      "stack": "heroku-container"
+      "stack": "heroku-20"
 }
