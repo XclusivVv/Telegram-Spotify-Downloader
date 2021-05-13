@@ -1,4 +1,6 @@
 #                                   . Spotify download bot .
+[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
+
 * A telegram bot for downlaoding spotify playlist songs on telegram.
 * Reach me on Telegram [@spotifyvrtxbot](https://t.me/@spotifyvrtxbot)
 <p align="centre">
