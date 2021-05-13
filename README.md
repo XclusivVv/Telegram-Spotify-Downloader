@@ -2,7 +2,7 @@
 [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
 
 * A telegram bot for downlaoding spotify playlist songs on telegram.
-* Reach me on <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"> @mastermindvrtx
+* Reach me @mastermindvrtx <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"> 
 
 <p align="centre">
   <img src="https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg">
