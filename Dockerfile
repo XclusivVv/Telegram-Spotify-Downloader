@@ -1,6 +1,6 @@
 # by @mastermindvrtx
 
-FROM jrottenberg/ffmpeg:4.0-alpine
+FROM jrottenberg/ffmpeg:latest
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3 python3-pip python3-dev
