@@ -1,5 +1,5 @@
 #                                   . Spotify download bot .
-[![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
+Working on docker.Till then use spotdl [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
 
 * A telegram bot for downlaoding spotify playlist songs on telegram.
 * Reach me @mastermindvrtx <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"> 
