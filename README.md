@@ -1,4 +1,4 @@
-##  Spotify download bot <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"> [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
+##  Tҽʅҽɠɾαɱ-Sρσƚιϝყ-Dσɯɳʅσαԃҽɾ <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"> [![Website cv.lbesson.qc.to](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)](http://cv.lbesson.qc.to/)
 Working on docker.
 Till then use spotdl [spotdlVER](https://github.com/mastermindvrtx/Telegram-Spotify-Downloader/archive/refs/tags/Beta-2.zip)
 
