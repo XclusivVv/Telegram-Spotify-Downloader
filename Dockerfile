@@ -1,4 +1,4 @@
-# by @phantomxhawk
+# by @mastermindvrtx
 
 FROM jrottenberg/ffmpeg:4.0-alpine
 
