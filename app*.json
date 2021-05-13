@@ -5,7 +5,7 @@
   "keywords": [
     "Spotify","SpotifyDownloader","SpotifyPremium","Premium","Music","Download"
   ],
-  "repository": "https://github.com/phantomXhawk/SpotifyDownloader.git",
+  "repository": "https://github.com/mastermindvrtx/Telegram-Spotify-Downloader.git",
   "success_url": "https://t.me/musicvrtx",
   "website": "https://t.me/spotifyvrtxbot",
   "env": {
