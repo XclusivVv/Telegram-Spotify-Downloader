@@ -4,7 +4,7 @@ import os
 from handlers import sender
 from handlers.helpers import spotifydl
 from telegram import Update
-from telegram.ext import CallbackContext, CommandHandler, Updater, MessageHandler, Filters, Handler
+from telegram.ext import CallbackContext, CommandHandler, Updater
 
 
 
@@ -12,8 +12,10 @@ logger = logging.getLogger(__name__)
 
 
 def setup_logging():
-    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                     level=logging.INFO)
+    logging.basicConfig(
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level=logging.INFO
+    )
  
 def start(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
@@ -85,33 +87,9 @@ def main():
             pass_job_queue=True,
             pass_chat_data=True
         )
-    )
-    handler = MessageHandler(Filters.text, get_single_song_handler)
-    dp.add_handler(handler=handler)     
-    
-    
-def get_single_song_handler(bot, update):
-    if config["AUTH"]["ENABLE"]:
-        authenticate(bot, update)
-    get_single_song(bot, update)
+    )    
 
-
-def get_single_song(bot, update):
-    chat_id = update.effective_message.chat_id
-    message_id = update.effective_message.message_id
-    username = update.message.chat.username
-    logging.log(logging.INFO, f'start to query message {message_id} in chat:{chat_id} from {username}')
-    
-    url = "'" + update.effective_message.text + "'"    
-    
-    if sent == 0:
-       bot.send_message(chat_id=chat_id, text="It seems there was a problem in finding/sending the song.")      
-    else:
-        logging.log(logging.INFO, 'sent')
-      
-  
-  
-    updater.start_polling(0.8)
+    updater.start_polling()
     updater.idle()
 
 
