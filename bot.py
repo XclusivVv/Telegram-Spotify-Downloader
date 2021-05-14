@@ -4,7 +4,7 @@ import os
 from handlers import sender
 from handlers.helpers import spotifydl
 from telegram import Update
-from telegram.ext import CallbackContext, CommandHandler, Updater
+from telegram.ext import CallbackContext, CommandHandler, Updater, MessageHandler, Filters, Handler
 
 
 
@@ -12,10 +12,8 @@ logger = logging.getLogger(__name__)
 
 
 def setup_logging():
-    logging.basicConfig(
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        level=logging.INFO
-    )
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                     level=logging.INFO)
  
 def start(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=update.effective_chat.id, text="""
@@ -87,10 +85,28 @@ def main():
             pass_job_queue=True,
             pass_chat_data=True
         )
-    )    
+    ) 
+def get_single_song_handler(bot, update):
+    if config["AUTH"]["ENABLE"]:
+        authenticate(bot, update)
+    get_single_song(bot, update)
 
-    updater.start_polling()
-    updater.idle()
+
+def get_single_song(bot, update):
+    chat_id = update.effective_message.chat_id
+    message_id = update.effective_message.message_id
+    username = update.message.chat.username
+    logging.log(logging.INFO, f'start to query message {message_id} in chat:{chat_id} from {username}')
+    
+    
+    
+handler = MessageHandler(Filters.text, get_single_song_handler)
+dispatcher.add_handler(handler=handler)    
+    
+
+POLLING_INTERVAL = 0.8
+updater.start_polling(poll_interval=POLLING_INTERVAL)
+updater.idle()
 
 
 if __name__ == "__main__":
