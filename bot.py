@@ -98,7 +98,13 @@ def get_single_song(bot, update):
     username = update.message.chat.username
     logging.log(logging.INFO, f'start to query message {message_id} in chat:{chat_id} from {username}')
     
+    url = "'" + update.effective_message.text + "'"    
     
+    if sent == 0:
+       bot.send_message(chat_id=chat_id, text="It seems there was a problem in finding/sending the song.")      
+    else:
+        logging.log(logging.INFO, 'sent')
+        
     
 handler = MessageHandler(Filters.text, get_single_song_handler)
 dispatcher.add_handler(handler=handler)    
