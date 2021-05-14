@@ -85,7 +85,11 @@ def main():
             pass_job_queue=True,
             pass_chat_data=True
         )
-    ) 
+    )
+    handler = MessageHandler(Filters.text, get_single_song_handler)
+    dp.add_handler(handler=handler)     
+    
+    
 def get_single_song_handler(bot, update):
     if config["AUTH"]["ENABLE"]:
         authenticate(bot, update)
@@ -104,15 +108,11 @@ def get_single_song(bot, update):
        bot.send_message(chat_id=chat_id, text="It seems there was a problem in finding/sending the song.")      
     else:
         logging.log(logging.INFO, 'sent')
-        
-    
-handler = MessageHandler(Filters.text, get_single_song_handler)
-dispatcher.add_handler(handler=handler)    
-    
-
-POLLING_INTERVAL = 0.8
-updater.start_polling(poll_interval=POLLING_INTERVAL)
-updater.idle()
+      
+  
+  
+    updater.start_polling(0.8)
+    updater.idle()
 
 
 if __name__ == "__main__":
