@@ -9,7 +9,7 @@ from telegram.ext import CallbackContext
 def downspotify(download_path: str, link: List[str]):
     os.mkdir(download_path)
     os.chdir(download_path)
-    os.system(f'spotifydl {link}')
+    os.system(f'spotdl {link}')
     os.chdir("..")
 
 
