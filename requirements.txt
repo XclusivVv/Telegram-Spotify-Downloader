@@ -19,14 +19,11 @@ requests==2.25.1
 six==1.15.0
 tqdm==4.60.0
 tornado==6.1
-spotdl==3.5.2
-spotify-dl
 tzlocal==2.1
 spotipy==2.18.0
 typing-extensions==3.7.4.3
 ytmusicapi==0.16.0
 urllib3==1.26.4
 datetime
-pynpm
-npm
+https://github.com/spotDL/spotify-downloader/archive/v3.5.2.zip
 
