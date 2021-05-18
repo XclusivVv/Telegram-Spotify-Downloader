@@ -28,7 +28,7 @@ def start(update: Update, context: CallbackContext):
 * Free Lol!
 
 * 𝕌𝕊𝔼 /help 𝔽𝕆ℝ 𝕄𝕆ℝ𝔼 𝕀ℕ𝔽𝕆*
-Made with💚by @phantomxhawk
+Made with💚by @MennerDaendels
 
 [https://telegra.ph/file/ff06b4802f3a2ac7b6343.jpg]
 """)
